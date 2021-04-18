@@ -10,7 +10,7 @@ const MainPageComp = () =>{
         <h1>Welcome To Movies Subscriptions Website</h1>
         
        <Switch>
-           <Route exact path="/" component={LoginComp}/>
+           <Route exact path="/cinima-app/" component={LoginComp}/>
            <Route path="/createaccount" component={CreateAccountComp} />
            <Route path="/main" component={MainPageNevigatorComp}/>
            <Route path="/movies" component={MoviesComp}/>
