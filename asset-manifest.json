@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/cinima-app/static/css/main.f827826d.chunk.css",
+    "main.js": "/cinima-app/static/js/main.c07d1636.chunk.js",
+    "main.js.map": "/cinima-app/static/js/main.c07d1636.chunk.js.map",
+    "runtime-main.js": "/cinima-app/static/js/runtime-main.272e1d09.js",
+    "runtime-main.js.map": "/cinima-app/static/js/runtime-main.272e1d09.js.map",
+    "static/js/2.72a3c416.chunk.js": "/cinima-app/static/js/2.72a3c416.chunk.js",
+    "static/js/2.72a3c416.chunk.js.map": "/cinima-app/static/js/2.72a3c416.chunk.js.map",
+    "static/js/3.3ff29d12.chunk.js": "/cinima-app/static/js/3.3ff29d12.chunk.js",
+    "static/js/3.3ff29d12.chunk.js.map": "/cinima-app/static/js/3.3ff29d12.chunk.js.map",
+    "index.html": "/cinima-app/index.html",
+    "static/css/main.f827826d.chunk.css.map": "/cinima-app/static/css/main.f827826d.chunk.css.map",
+    "static/js/2.72a3c416.chunk.js.LICENSE.txt": "/cinima-app/static/js/2.72a3c416.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/cinima-app/static/media/moviesbackground.055aef40.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.272e1d09.js",
+    "static/js/2.72a3c416.chunk.js",
+    "static/css/main.f827826d.chunk.css",
+    "static/js/main.c07d1636.chunk.js"
+  ]
+}
