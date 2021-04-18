@@ -2,6 +2,7 @@ import {useState,useEffect} from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 import userUtils from '../utils/userUtils';
+import {Link} from 'react-router-dom'
 import cookies from 'js-cookie'
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -24,7 +25,7 @@ const MainPageNevigatorComp  = (props) => {
     const logout = ()=>
     {
       document.cookie = "_userid=0 expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;"
-      props.history.push('/');
+     
     }
     return (
 
@@ -32,9 +33,12 @@ const MainPageNevigatorComp  = (props) => {
       <div height='50px' color='red'>
         <h3>Welcome {user.FirstName} {user.LastName}</h3>
       </div>
-       <Button size="small" variant="contained" color="primary" onClick={()=>{ props.history.push('/movies');}}>
+      
+      <Button size="small" variant="contained" color="primary" onClick={()=>{ props.history.push('/movies');}}>
         Movies
       </Button>
+     
+      
       <Button size="small" variant="contained" color="primary" >
         Subscriptions
       </Button>

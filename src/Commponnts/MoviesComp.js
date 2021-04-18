@@ -1,4 +1,4 @@
-import {useState,useEffect} from 'react';
+import {useState,useEffect,React} from 'react';
 import '../utils/movieUtils';
 import movieUtils from '../utils/movieUtils';
 import MediaMoiveCard from './SingleMovieComp'
@@ -21,9 +21,10 @@ const MoviesComp = ()=>
                 setMovies(resp.data)
             })
     },[])
+    
     let items =  movies.map((item)=>{
         return (
-        <Grid item key={item._id} xs={12} spacing={3}>
+        <Grid item key={item._id} xs={4} spacing={3}>
              <MediaMoiveCard  key={item._id} name={item.Name}  image={item.Image} />
              
         </Grid>)
@@ -31,7 +32,7 @@ const MoviesComp = ()=>
     });
     return(
         <div className={classes.root}>
-          <Grid container spacing={1} >
+          <Grid container spacing={2}  direction='row' justify='flex-start' alignItems="flex-start" >
             {items}
           </Grid>
             
