@@ -1,8 +1,13 @@
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+
+  height: 50vh; /* Magic here */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("./Images/moviesbackground.png");
+  color:white;
+  font-family:'Montserrat Alternates', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
