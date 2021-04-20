@@ -1,6 +1,6 @@
 import './index.css';
-import MainPageComp from './Commponnts/MainPageComp'
-import MoviesComp from './Commponnts/MoviesComp'
+import MainPageComp from './Commponnts/MainPage'
+import MoviesComp from './Commponnts/Movies'
 function App() {
   return (
     <div className="App">

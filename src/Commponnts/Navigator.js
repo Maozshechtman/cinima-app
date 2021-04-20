@@ -11,6 +11,7 @@ const useStyles = makeStyles((theme) => ({
       },
     },
   }));
+  
 const MainPageNevigatorComp  = (props) => {
       const [user,setUser] = useState({_id:0,permissions:[]});
       const classes = useStyles();

@@ -1,16 +1,18 @@
 import {useState,useEffect,React} from 'react';
 import '../utils/movieUtils';
 import movieUtils from '../utils/movieUtils';
-import MediaMoiveCard from './SingleMovieComp'
+import MediaMoiveCard from './MovieCard'
 import Grid from '@material-ui/core/Grid';
 import { makeStyles } from '@material-ui/core/styles';
 
+//Styles Configuration 
 const useStyles = makeStyles((theme) => ({
     root: {
       flexGrow: 3,
     },
     
   }));
+
 const MoviesComp = ()=>
 {
    let [movies,setMovies] = useState([]);
