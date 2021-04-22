@@ -24,7 +24,7 @@ const MoviesComp = ()=>
             })
     },[])
     
-    let items =  movies.map((item)=>{
+    let items =  movies.splice(0,18).map((item)=>{
         return (
         <Grid item key={item._id} xs={4} spacing={3}>
              <MediaMoiveCard  key={item._id} name={item.Name}  image={item.Image} />

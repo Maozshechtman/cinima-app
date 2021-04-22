@@ -25,7 +25,7 @@ export default function MediaMoiveCard(props) {
     <Card className={classes.root}>
       <CardActionArea>
         <CardMedia>
-            <img src={props.image} height='140' width='180'/>
+            <img src={props.image} height='100' width='80'/>
         </CardMedia>
           
         <CardContent>

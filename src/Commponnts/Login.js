@@ -5,6 +5,9 @@ import usersUtils from '../utils/userUtils';
 import { makeStyles } from '@material-ui/core/styles';
 import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
+import Alert from '@material-ui/lab/Alert';
+import { AlertTitle } from '@material-ui/lab';
+
 // Styles set
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -30,6 +33,7 @@ const useStyles = makeStyles((theme) => ({
 const LoginComp = (props)=>{
     const [userName,setUserName] = useState('')
     const [password,setPassword] = useState('')
+    const [isLoginFailed,setIsLoginFailed] = useState(false);
     const classes = useStyles();
     const LoginSubmit = async (e)=>
     {
@@ -45,16 +49,19 @@ const LoginComp = (props)=>{
         props.history.push('/main');
         }
         else{
-            props.history.push('/')
+           setIsLoginFailed(true);
         }
+        
         
     }
     return(
         <div style={{
             position: 'absolute', left: '50%', top: '50%',
-            transform: 'translate(-50%, -50%)'
-        }}>
+            transform: 'translate(-50%, -50%)'}}>
+              
           <h2>Login</h2>
+         
+
             <form onSubmit={e=>LoginSubmit(e)}>
                  <TextField   className={classes.root} id="outlined-basic" label="User Name" variant="outlined" InputProps={{className: classes.input}} InputLabelProps={{className: classes.inputlabel}}  onChange={e=>{setUserName(e.target.value)}}/>
                 <br/><br/>
@@ -63,6 +70,10 @@ const LoginComp = (props)=>{
                 <Button  class={classes.btnclass} type="submit" variant="contained">Log In</Button>
                 <br/>
             </form>
+            {isLoginFailed?<Alert severity="error" onclose={()=>{setIsLoginFailed(false)} }>
+              <AlertTitle>Error</AlertTitle> 
+              <strong>username</strong> or <strong>password</strong> are incorrect
+              </Alert>:null}
             <br/>
             New User?  &nbsp; <Link to="/createaccount" color='white'>Create Account</Link>
            
